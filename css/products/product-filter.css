@@ -1,0 +1,39 @@
+.filters > div { /* filter by */
+  margin: 20px 0;
+  margin-left: 5px;
+}
+
+.filters > div > div { 
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.filters > div > h1 {
+  margin-bottom: 10px;
+  font-size: .9rem;
+}
+
+.filters > div label {
+  font-size: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.filters > div label span{
+  color: #ffff00;
+}
+
+
+.filters > div > div input[type='checkbox']{
+  width: 16px;
+  height: 16px;
+}
+
+.filter-brands div label:hover {
+  color: #11935b;
+}
+.filter-brands div input:hover {
+  background-color: #11935b;
+  cursor: pointer;
+}
+

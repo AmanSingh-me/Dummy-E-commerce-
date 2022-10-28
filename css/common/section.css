@@ -1,0 +1,17 @@
+product-filter {
+  width: 18vw;
+  /* background: #2b2e43; */
+  border-right: 2px solid #2b2e43;
+  padding: 10px;
+}
+
+products {
+  width: 82vw;
+  padding: 12px;
+}
+
+section {
+  display: flex;
+  border-bottom: 2px solid #2b2e43;
+
+}

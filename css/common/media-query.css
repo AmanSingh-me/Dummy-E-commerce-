@@ -1,0 +1,42 @@
+@media screen and (min-width: 1366px) {
+  body {
+    display: flex;
+    justify-content: center;
+    background-color: #2b2e43;
+  }
+  main {
+    width: 1366px;
+  }
+}
+
+@media screen and (max-width: 541px) {
+  nav[aria-labelledby="navbar"] {
+    padding: 3px 6px !important;
+  }
+  .logo {
+    font-size: 1.4rem;
+  }
+  .cart {
+    font-size: 1.6rem;
+  }
+  .logo + form {
+    order: 2;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  #search-query {
+    width: 70%;
+  }
+
+  header > nav input {
+    padding: 3px 9px;
+    font-size: 1rem;
+  }
+
+  .pagination-container a {
+    font-size: 0.9rem !important;
+    padding: 6px 12px !important;
+    margin: 0 5px !important;
+  }
+}

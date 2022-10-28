@@ -1,0 +1,93 @@
+carousel {
+  display: block;
+  position: relative;
+  height: 85vh;
+}
+carousel > label {
+  position: absolute;
+  width: 45px;
+  height: 100%;
+  display: flex;
+  padding: 0 5px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+carousel > label img {
+  width: 100%;
+}
+
+carousel > label img:active {
+  scale: 0.9; /* newly introduced */
+  transform: scale(0.9);
+}
+
+.carousel-bg-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition-property: background, opacity;
+  transition-duration: 400ms;
+}
+
+.carousel-bg-image:hover{
+  opacity: .7;
+}
+.carousel-bg-image:hover + .bg-image-details{
+  backdrop-filter: blur(5px);
+}
+
+.bg-image-details {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+}
+
+
+.bg-image-text {
+  font-weight: 100;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  carousel {
+    height: 65vh;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  carousel {
+    height: 55vh;
+  }
+  .bg-image-details {
+    bottom: 0;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  carousel {
+    height: calc((100vw - 20vh) - 50px);
+    max-height: 45vh;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  carousel > label {
+    width: 40px;
+  }
+  .bg-image-details {
+    font-size: 0.9rem;
+  }
+  .bg-image-text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

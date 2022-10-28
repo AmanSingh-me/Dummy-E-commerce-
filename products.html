@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop | Products</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/common/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/products/product-filter.css">
+    <link rel="stylesheet" href="./css/common/section.css">
+    <link rel="stylesheet" href="./css/common/media-query.css">
+    <link rel="stylesheet" href="./css/section/products.css">
+    <link rel="stylesheet" href="./css/section/product-media-query.css">
+    <link rel="stylesheet" href="./css/common/footer.css">
+</head>
+
+<body>
+    <main>
+        <!-- Header -->
+        <header>
+            <nav aria-labelledby="navbar"></label>
+                <a href="./index.html" class="logo">E-Shop</a>
+                <form action="">
+                    <input list="search-query-suggestions" type="search" id="search-query" placeholder="search">
+                    <datalist id="search-query-suggestions">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                    <input type="submit" value="Search">
+                </form>
+                <cart class="cart" cart-items-count="0"><a href="./cart.html">&#128722;</a></cart>
+            </nav>
+            <!-- Product Categories -->
+            <nav aria-labelledby="categories" class="product-categories">
+                <!-- previous -->
+                <div class="left-scroll-box">
+                    <img src="./assets/circle-chevron-left-solid.svg" title="scroll-left" alt="previous">
+                </div>
+                <a href="">Smartphones</a>
+                <a href="">Laptops</a>
+                <a href="">Mens Wear</a>
+                <a href="">Mens Watch</a>
+                <a href="">Womens Wear</a>
+                <a href="">Sunglasses</a>
+                <a href="">Skincare</a>
+                <a href="">Furniture</a>
+                <a href="">Home Decoration</a>
+                <a href="">Groceries</a>
+                <a href="">Fragrances</a>
+                <a href="">Automotive</a>
+                <!-- next -->
+                <div class="right-scroll-box">
+                    <img src="./assets/circle-chevron-right-solid.svg" title="scroll-right" alt="next">
+                </div>
+            </nav>
+        </header>
+
+        <!-- Section -->
+        <section>
+            <!-- filters -->
+            <product-filter class="filters">
+                <div class="filter-brands">
+                    <h1>BRANDS</h1>
+                    <div>
+                        <input type="checkbox" name="" value="" id="hii">
+                        <label for="hii">HIi</label>
+                    </div>
+                </div>
+                <div class="filter-price">
+                    <h1>PRICE</h1>
+                    <div>
+                        <input type="checkbox" name="" value="price-high-to-low" id="price-high-to-low">
+                        <label for="price-high-to-low">High to low</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" value="price-low-to-high" id="price-low-to-high">
+                        <label for="price-low-to-high">Low to high</label>
+                    </div>
+                </div>
+                <div class="filter-rating">
+                    <h1>RATING</h1>
+                    <div>
+                        <input type="checkbox" value="rating-4-&above" id="rating-4-&above">
+                        <label for="rating-4-&above">4<span>★</span> &amp; above </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="rating-3-&above" id="rating-3-&above">
+                        <label for="rating-3-&above">3<span>★</span> &amp; above</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="rating-2-&above" id="rating-2-&above">
+                        <label for="rating-2-&above">2<span>★</span> &amp; above</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="rating-1-&above" id="rating-1-&above">
+                        <label for="rating-1-&above">1<span>★</span> &amp; above</label>
+                    </div>
+                </div>
+            </product-filter>
+            <!-- products -->
+            <products class="products-container">
+                <div class="product-card">
+                    <div>
+                        <img src="https://dummyjson.com/image/i/products/1/thumbnail.jpg" class="product-img" alt="">
+                        <span class="product-brand">Apple</span>
+                    </div>
+                    <div>
+                        <h2 class="product-name">iPhone 9</h2>
+                    </div>
+                    <div>
+                        <span class="product-rating">4.5</span>
+                    </div>
+                    <div>
+                        <span class="product-price" price-symbol="$">549</span>
+                        <span class="product-discount-percent">12.96</span>
+                    </div>
+                    <div>
+                        <p class="product-description">An apple mobile which is nothing like apple
+                        </p>
+                    </div>
+                    <a class="interested-in-product">I'm Interested</a>
+                </div>
+                <div class="product-card">
+                    <div>
+                        <img src="https://dummyjson.com/image/i/products/1/thumbnail.jpg" class="product-img" alt="">
+                        <span class="product-brand">Apple</span>
+                    </div>
+                    <div>
+                        <h2 class="product-name">iPhone 9</h2>
+                    </div>
+                    <div>
+                        <span class="product-rating">4.5</span>
+                    </div>
+                    <div>
+                        <span class="product-price" price-symbol="$">549</span>
+                        <span class="product-discount-percent">12.96</span>
+                    </div>
+                    <div>
+                        <p class="product-description">An apple mobile which is nothing like apple
+                        </p>
+                    </div>
+                    <a class="interested-in-product">I'm Interested</a>
+                </div>
+                <div class="product-card">
+                    <div>
+                        <img src="https://dummyjson.com/image/i/products/1/thumbnail.jpg" class="product-img" alt="">
+                        <span class="product-brand">Apple</span>
+                    </div>
+                    <div>
+                        <h2 class="product-name">iPhone 9</h2>
+                    </div>
+                    <div>
+                        <span class="product-rating">4.5</span>
+                    </div>
+                    <div>
+                        <span class="product-price" price-symbol="$">549</span>
+                        <span class="product-discount-percent">12.96</span>
+                    </div>
+                    <div>
+                        <p class="product-description">An apple mobile which is nothing like apple
+                        </p>
+                    </div>
+                    <a class="interested-in-product">I'm Interested</a>
+                </div>
+                <div class="product-card">
+                    <div>
+                        <img src="https://dummyjson.com/image/i/products/1/thumbnail.jpg" class="product-img" alt="">
+                        <span class="product-brand">Apple</span>
+                    </div>
+                    <div>
+                        <h2 class="product-name">iPhone 9</h2>
+                    </div>
+                    <div>
+                        <span class="product-rating">4.5</span>
+                    </div>
+                    <div>
+                        <span class="product-price" price-symbol="$">549</span>
+                        <span class="product-discount-percent">12.96</span>
+                    </div>
+                    <div>
+                        <p class="product-description">An apple mobile which is nothing like apple
+                        </p>
+                    </div>
+                    <a class="interested-in-product">I'm Interested</a>
+                </div>
+                <div class="product-card">
+                    <div>
+                        <img src="https://dummyjson.com/image/i/products/1/thumbnail.jpg" class="product-img" alt="">
+                        <span class="product-brand">Apple</span>
+                    </div>
+                    <div>
+                        <h2 class="product-name">iPhone 9</h2>
+                    </div>
+                    <div>
+                        <span class="product-rating">4.5</span>
+                    </div>
+                    <div>
+                        <span class="product-price" price-symbol="$">549</span>
+                        <span class="product-discount-percent">12.96</span>
+                    </div>
+                    <div>
+                        <p class="product-description">An apple mobile which is nothing like apple
+                        </p>
+                    </div>
+                    <a class="interested-in-product">I'm Interested</a>
+                </div>
+                <div class="product-card">
+                    <div>
+                        <img src="https://dummyjson.com/image/i/products/1/thumbnail.jpg" class="product-img" alt="">
+                        <span class="product-brand">Apple</span>
+                    </div>
+                    <div>
+                        <h2 class="product-name">iPhone 9</h2>
+                    </div>
+                    <div>
+                        <span class="product-rating">4.5</span>
+                    </div>
+                    <div>
+                        <span class="product-price" price-symbol="$">549</span>
+                        <span class="product-discount-percent">12.96</span>
+                    </div>
+                    <div>
+                        <p class="product-description">An apple mobile which is nothing like apple
+                        </p>
+                    </div>
+                    <a class="interested-in-product">I'm Interested</a>
+                </div>
+                <div class="product-card">
+                    <div>
+                        <img src="https://dummyjson.com/image/i/products/1/thumbnail.jpg" class="product-img" alt="">
+                        <span class="product-brand">Apple</span>
+                    </div>
+                    <div>
+                        <h2 class="product-name">iPhone 9</h2>
+                    </div>
+                    <div>
+                        <span class="product-rating">4.5</span>
+                    </div>
+                    <div>
+                        <span class="product-price" price-symbol="$">549</span>
+                        <span class="product-discount-percent">12.96</span>
+                    </div>
+                    <div>
+                        <p class="product-description">An apple mobile which is nothing like apple
+                        </p>
+                    </div>
+                    <a class="interested-in-product">I'm Interested</a>
+                </div>
+                <div class="product-card">
+                    <div>
+                        <img src="https://dummyjson.com/image/i/products/1/thumbnail.jpg" class="product-img" alt="">
+                        <span class="product-brand">Apple</span>
+                    </div>
+                    <div>
+                        <h2 class="product-name">iPhone 9</h2>
+                    </div>
+                    <div>
+                        <span class="product-rating">4.5</span>
+                    </div>
+                    <div>
+                        <span class="product-price" price-symbol="$">549</span>
+                        <span class="product-discount-percent">12.96</span>
+                    </div>
+                    <div>
+                        <p class="product-description">An apple mobile which is nothing like apple
+                        </p>
+                    </div>
+                    <a class="interested-in-product">I'm Interested</a>
+                </div>
+                <div class="product-card">
+                    <div>
+                        <img src="https://dummyjson.com/image/i/products/1/thumbnail.jpg" class="product-img" alt="">
+                        <span class="product-brand">Apple</span>
+                    </div>
+                    <div>
+                        <h2 class="product-name">iPhone 9</h2>
+                    </div>
+                    <div>
+                        <span class="product-rating">4.5</span>
+                    </div>
+                    <div>
+                        <span class="product-price" price-symbol="$">549</span>
+                        <span class="product-discount-percent">12.96</span>
+                    </div>
+                    <div>
+                        <p class="product-description">An apple mobile which is nothing like apple
+                        </p>
+                    </div>
+                    <a class="interested-in-product">I'm Interested</a>
+                </div>
+                <div class="pagination-container">
+                    <a href="http://">Previous</a>
+                    <a href="http://">1</a>
+                    <a href="http://">2</a>
+                    <a href="http://">3</a>
+                    <a href="http://">Next</a>
+                </div>
+            </products>
+
+        </section>
+
+        <!-- footer -->
+        <footer>
+
+        </footer>
+    </main>
+    <script src="/js/horizontal-scroller.js"></script>
+    <script src="./js/fetch-products.js"></script>
+</body>
+
+</html>

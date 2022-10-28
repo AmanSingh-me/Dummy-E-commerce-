@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> E SHOP </title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common/header.css">
+    <link rel="stylesheet" href="./css/common/media-query.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/common/cart.css">
+</head>
+
+<body>
+    <main>
+
+        <!-- header -->
+        <header aria-labelledby="navbar">
+            <nav aria-labelledby="navbar"></label>
+                <a href="./index.html" class="logo">E-Shop</a>
+                <form action="./products.html">
+                    <input list="search-query-suggestions" type="search" id="search-query" placeholder="search">
+                    <datalist id="search-query-suggestions">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                    <input type="submit" value="Search">
+                </form>
+                <cart class="cart" cart-items-count="0"> <a href="./cart.html">&#128722; </a> </cart>
+            </nav>
+            <!-- Product Categories -->
+            <nav aria-labelledby="categories" class="product-categories">
+                <!-- previous -->
+                <div class="left-scroll-box">
+                    <img src="./assets/circle-chevron-left-solid.svg" title="scroll-left" alt="previous">
+                </div>
+                <a href="">Smartphones</a>
+                <a href="">Laptops</a>
+                <a href="">Mens Wear</a>
+                <a href="">Mens Watch</a>
+                <a href="">Womens Wear</a>
+                <a href="">Sunglasses</a>
+                <a href="">Skincare</a>
+                <a href="">Furniture</a>
+                <a href="">Home Decoration</a>
+                <a href="">Groceries</a>
+                <a href="">Fragrances</a>
+                <a href="">Automotive</a>
+                <!-- next -->
+                <div class="right-scroll-box">
+                    <img src="./assets/circle-chevron-right-solid.svg" title="scroll-right" alt="next">
+                </div>
+            </nav>
+        </header>
+        <script src="./js/horizontal-scroller.js"></script>
+
+        <!-- section -->
+        <carousel aria-labelledby="carousel">
+            <label for="carousel-shift-left" class="left-scroll-box">
+                <img src="./assets/circle-chevron-left-solid.svg" class="carousel-shift-left" title="scroll-left"
+                    alt="previous">
+            </label>
+            <label for="carousel-shift-right" class="right-scroll-box">
+                <img src="./assets/circle-chevron-right-solid.svg" class="carousel-shift-right" title="scroll-right"
+                    alt="next">
+            </label>
+            <a class="carousel-bg-image"></a>
+            <div class="bg-image-details">
+                <h3 class="bg-image-title">Lorem, ipsum</h3>
+                <p class="bg-image-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a sit, quas
+                    suscipit ipsam vero</p>
+            </div>
+        </carousel>
+
+    </main>
+    <script src="./js/carousel.js"></script>
+</body>
+
+</html>

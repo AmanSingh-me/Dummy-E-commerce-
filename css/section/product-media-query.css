@@ -1,0 +1,38 @@
+@media screen and (max-width: 1201px) {
+  .filters {
+    width: 20vw;
+  }
+
+  .products-container {
+    width: 80vw;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .products-container {
+    padding: 12px 0;
+  }
+  .filters {
+    display: none;
+  }
+  .products-container {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .product-card {
+    width: 42%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .products-container::-webkit-scrollbar {
+    width: 0;
+  }
+  .product-card {
+    width: 100%;
+    max-width: 250px;
+  }
+}
